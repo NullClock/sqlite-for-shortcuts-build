@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6745950F2756B1C600FD9F88 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6745950E2756B1C500FD9F88 /* HomeKit.framework */; };
 		677FCDF52755BB3000EA7923 /* sqlcutsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677FCDF42755BB3000EA7923 /* sqlcutsApp.swift */; };
 		677FCDF72755BB3000EA7923 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677FCDF62755BB3000EA7923 /* ContentView.swift */; };
 		677FCDF92755BB3100EA7923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 677FCDF82755BB3100EA7923 /* Assets.xcassets */; };
 		677FCDFC2755BB3100EA7923 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 677FCDFB2755BB3100EA7923 /* Preview Assets.xcassets */; };
+		677FCE032755BB5D00EA7923 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 677FCE022755BB5D00EA7923 /* Intents.intentdefinition */; };
+		F138D109F67DDD0CEA1B3FA3 /* Pods_sqlcuts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6428A552C2C98BF5411CC96 /* Pods_sqlcuts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29C09A6CB8DA11A43DD6D90B /* Pods-sqlcuts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sqlcuts.debug.xcconfig"; path = "Target Support Files/Pods-sqlcuts/Pods-sqlcuts.debug.xcconfig"; sourceTree = "<group>"; };
+		6745950D2756B1C500FD9F88 /* sqlcuts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sqlcuts.entitlements; sourceTree = "<group>"; };
+		6745950E2756B1C500FD9F88 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		674595102756B27700FD9F88 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		677FCDF12755BB3000EA7923 /* sqlcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sqlcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		677FCDF42755BB3000EA7923 /* sqlcutsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sqlcutsApp.swift; sourceTree = "<group>"; };
 		677FCDF62755BB3000EA7923 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		677FCDF82755BB3100EA7923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		677FCDFB2755BB3100EA7923 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		677FCE022755BB5D00EA7923 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		677FCE042755BBC800EA7923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7CBFD5F5AB488EB46E5F7D3E /* Pods-sqlcuts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sqlcuts.release.xcconfig"; path = "Target Support Files/Pods-sqlcuts/Pods-sqlcuts.release.xcconfig"; sourceTree = "<group>"; };
+		A6428A552C2C98BF5411CC96 /* Pods_sqlcuts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sqlcuts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +37,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6745950F2756B1C600FD9F88 /* HomeKit.framework in Frameworks */,
+				F138D109F67DDD0CEA1B3FA3 /* Pods_sqlcuts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		497183103D84CF166C9418D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				674595102756B27700FD9F88 /* CloudKit.framework */,
+				6745950E2756B1C500FD9F88 /* HomeKit.framework */,
+				A6428A552C2C98BF5411CC96 /* Pods_sqlcuts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		570C389E67B58BE8CB707AB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29C09A6CB8DA11A43DD6D90B /* Pods-sqlcuts.debug.xcconfig */,
+				7CBFD5F5AB488EB46E5F7D3E /* Pods-sqlcuts.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		677FCDE82755BB3000EA7923 = {
 			isa = PBXGroup;
 			children = (
 				677FCDF32755BB3000EA7923 /* sqlcuts */,
 				677FCDF22755BB3000EA7923 /* Products */,
+				570C389E67B58BE8CB707AB3 /* Pods */,
+				497183103D84CF166C9418D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,7 +85,10 @@
 		677FCDF32755BB3000EA7923 /* sqlcuts */ = {
 			isa = PBXGroup;
 			children = (
+				6745950D2756B1C500FD9F88 /* sqlcuts.entitlements */,
+				677FCE042755BBC800EA7923 /* Info.plist */,
 				677FCDF42755BB3000EA7923 /* sqlcutsApp.swift */,
+				677FCE022755BB5D00EA7923 /* Intents.intentdefinition */,
 				677FCDF62755BB3000EA7923 /* ContentView.swift */,
 				677FCDF82755BB3100EA7923 /* Assets.xcassets */,
 				677FCDFA2755BB3100EA7923 /* Preview Content */,
@@ -74,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 677FCDFF2755BB3100EA7923 /* Build configuration list for PBXNativeTarget "sqlcuts" */;
 			buildPhases = (
+				DE4AAA1D3C6C26B0D029E4C6 /* [CP] Check Pods Manifest.lock */,
 				677FCDED2755BB3000EA7923 /* Sources */,
 				677FCDEE2755BB3000EA7923 /* Frameworks */,
 				677FCDEF2755BB3000EA7923 /* Resources */,
+				6A433E372A58C56D0EF5C0D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,11 +171,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6A433E372A58C56D0EF5C0D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sqlcuts/Pods-sqlcuts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sqlcuts/Pods-sqlcuts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sqlcuts/Pods-sqlcuts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE4AAA1D3C6C26B0D029E4C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sqlcuts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		677FCDED2755BB3000EA7923 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				677FCE032755BB5D00EA7923 /* Intents.intentdefinition in Sources */,
 				677FCDF72755BB3000EA7923 /* ContentView.swift in Sources */,
 				677FCDF52755BB3000EA7923 /* sqlcutsApp.swift in Sources */,
 			);
@@ -263,15 +345,19 @@
 		};
 		677FCE002755BB3100EA7923 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29C09A6CB8DA11A43DD6D90B /* Pods-sqlcuts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sqlcuts/sqlcuts.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"sqlcuts/Preview Content\"";
 				DEVELOPMENT_TEAM = 4VGGD85J2F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sqlcuts/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = sqlcuts;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -292,15 +378,19 @@
 		};
 		677FCE012755BB3100EA7923 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CBFD5F5AB488EB46E5F7D3E /* Pods-sqlcuts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sqlcuts/sqlcuts.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"sqlcuts/Preview Content\"";
 				DEVELOPMENT_TEAM = 4VGGD85J2F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sqlcuts/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = sqlcuts;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -1,0 +1,6 @@
+framework module Pods_sqlcuts {
+  umbrella header "Pods-sqlcuts-umbrella.h"
+
+  export *
+  module * { export * }
+}

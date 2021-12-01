@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>INIntentsSupported</key>
+	<array>
+		<string>QueryDbIntent</string>
+		<string>UpdateDbIntent</string>
+	</array>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>QueryDbIntent</string>
+		<string>UpdateDbIntent</string>
+	</array>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>A SQLite3 database</string>
+			<key>UTTypeIconFiles</key>
+			<array/>
+			<key>UTTypeIdentifier</key>
+			<string>com.tylerdaddio.sqlite3</string>
+			<key>UTTypeReferenceURL</key>
+			<string>https://sqlite.org/fileformat.html</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>db</string>
+					<string>sqlite</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>A SQLite3 database journal</string>
+			<key>UTTypeIconFiles</key>
+			<array/>
+			<key>UTTypeIdentifier</key>
+			<string>com.tylerdaddio.sqlite3journal</string>
+			<key>UTTypeReferenceURL</key>
+			<string>https://sqlite.org/fileformat.html</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>db-journal</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
