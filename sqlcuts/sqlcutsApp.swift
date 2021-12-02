@@ -97,6 +97,22 @@ class UpdateDbIntentHandler: NSObject, UpdateDbIntentHandling {
     }
 }
 
+enum QueryDbError: Error, CustomStringConvertible {
+    case emptyStatement(sql: String)
+    case multipleStatements(sql: String)
+}
+
+extension QueryDbError {
+    public var description: String {
+        switch self {
+        case .emptyStatement(sql: let sql):
+            return "Invalid query: Statement is empty - sql: `\(sql)`"
+        case .multipleStatements(sql: let sql):
+            return "Invalid query: Multiple statements provided. This action must receive exactly one query - sql: `\(sql)`"
+        }
+    }
+}
+
 class QueryDbIntentHandler: NSObject, QueryDbIntentHandling {
     
     func handle(intent: QueryDbIntent, completion: @escaping (QueryDbIntentResponse) -> Void) {
@@ -113,7 +129,19 @@ class QueryDbIntentHandler: NSObject, QueryDbIntentHandling {
             let dbPath = dbUrl.absoluteString
             let dbQueue = try DatabaseQueue(path: dbPath, configuration: config)
             try dbQueue.read { db in
-                let rows = try Row.fetchAll(db, sql: queryStr)
+                let statements = try db.allStatements(sql: queryStr)
+                guard let statement = try statements.next() else {
+                    throw QueryDbError.emptyStatement(sql: queryStr)
+                }
+                do {
+                    guard try statements.next() == nil else {
+                        throw QueryDbError.multipleStatements(sql: queryStr)
+                    }
+                } catch {
+                    throw QueryDbError.multipleStatements(sql: queryStr)
+                }
+                
+                let rows = try Row.fetchAll(statement)
                 let results = rows.map({r in
                     r.map({ (column, dbValue) in
                         switch dbValue.storage {
