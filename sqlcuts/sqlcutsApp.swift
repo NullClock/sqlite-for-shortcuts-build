@@ -42,6 +42,13 @@ class UpdateDbIntentHandler: NSObject, UpdateDbIntentHandling {
         let parentDir = intent.directory!
         let parentDirUrl = parentDir.fileURL!
         
+        if parentDirUrl != dbUrl.deletingLastPathComponent()  {
+            let response = UpdateDbIntentResponse(code: .error, userActivity: nil)
+            response.errorText = "Parent folder must be set to the directory that contains the selected SQLite database file."
+            completion(response)
+            return
+        }
+        
         let isParentDirSecured = parentDirUrl.startAccessingSecurityScopedResource()
         let isDbFileSecured = dbUrl.startAccessingSecurityScopedResource()
         do {
