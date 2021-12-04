@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:sqlcuts.xcodeproj">
+      location = "group:/Users/jtd/Documents/tooldev/sqlcuts-ios/sqlite-shortcuts-ios.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

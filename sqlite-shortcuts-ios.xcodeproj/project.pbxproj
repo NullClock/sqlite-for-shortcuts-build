@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6745950F2756B1C600FD9F88 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6745950E2756B1C500FD9F88 /* HomeKit.framework */; };
-		677FCDF52755BB3000EA7923 /* sqlcutsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677FCDF42755BB3000EA7923 /* sqlcutsApp.swift */; };
+		677FCDF52755BB3000EA7923 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677FCDF42755BB3000EA7923 /* App.swift */; };
 		677FCDF72755BB3000EA7923 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677FCDF62755BB3000EA7923 /* ContentView.swift */; };
 		677FCDF92755BB3100EA7923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 677FCDF82755BB3100EA7923 /* Assets.xcassets */; };
 		677FCDFC2755BB3100EA7923 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 677FCDFB2755BB3100EA7923 /* Preview Assets.xcassets */; };
@@ -21,8 +21,8 @@
 		6745950D2756B1C500FD9F88 /* sqlcuts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sqlcuts.entitlements; sourceTree = "<group>"; };
 		6745950E2756B1C500FD9F88 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 		674595102756B27700FD9F88 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		677FCDF12755BB3000EA7923 /* sqlcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sqlcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		677FCDF42755BB3000EA7923 /* sqlcutsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sqlcutsApp.swift; sourceTree = "<group>"; };
+		677FCDF12755BB3000EA7923 /* SQLite for Shortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SQLite for Shortcuts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		677FCDF42755BB3000EA7923 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		677FCDF62755BB3000EA7923 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		677FCDF82755BB3100EA7923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		677FCDFB2755BB3100EA7923 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		677FCDF22755BB3000EA7923 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				677FCDF12755BB3000EA7923 /* sqlcuts.app */,
+				677FCDF12755BB3000EA7923 /* SQLite for Shortcuts.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,7 +87,7 @@
 			children = (
 				6745950D2756B1C500FD9F88 /* sqlcuts.entitlements */,
 				677FCE042755BBC800EA7923 /* Info.plist */,
-				677FCDF42755BB3000EA7923 /* sqlcutsApp.swift */,
+				677FCDF42755BB3000EA7923 /* App.swift */,
 				677FCE022755BB5D00EA7923 /* Intents.intentdefinition */,
 				677FCDF62755BB3000EA7923 /* ContentView.swift */,
 				677FCDF82755BB3100EA7923 /* Assets.xcassets */,
@@ -107,9 +107,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		677FCDF02755BB3000EA7923 /* sqlcuts */ = {
+		677FCDF02755BB3000EA7923 /* SQLite for Shortcuts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 677FCDFF2755BB3100EA7923 /* Build configuration list for PBXNativeTarget "sqlcuts" */;
+			buildConfigurationList = 677FCDFF2755BB3100EA7923 /* Build configuration list for PBXNativeTarget "SQLite for Shortcuts" */;
 			buildPhases = (
 				DE4AAA1D3C6C26B0D029E4C6 /* [CP] Check Pods Manifest.lock */,
 				677FCDED2755BB3000EA7923 /* Sources */,
@@ -121,9 +121,9 @@
 			);
 			dependencies = (
 			);
-			name = sqlcuts;
+			name = "SQLite for Shortcuts";
 			productName = sqlcuts;
-			productReference = 677FCDF12755BB3000EA7923 /* sqlcuts.app */;
+			productReference = 677FCDF12755BB3000EA7923 /* SQLite for Shortcuts.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +141,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 677FCDEC2755BB3000EA7923 /* Build configuration list for PBXProject "sqlcuts" */;
+			buildConfigurationList = 677FCDEC2755BB3000EA7923 /* Build configuration list for PBXProject "sqlite-shortcuts-ios" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -154,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				677FCDF02755BB3000EA7923 /* sqlcuts */,
+				677FCDF02755BB3000EA7923 /* SQLite for Shortcuts */,
 			);
 		};
 /* End PBXProject section */
@@ -220,7 +220,7 @@
 			files = (
 				677FCE032755BB5D00EA7923 /* Intents.intentdefinition in Sources */,
 				677FCDF72755BB3000EA7923 /* ContentView.swift in Sources */,
-				677FCDF52755BB3000EA7923 /* sqlcutsApp.swift in Sources */,
+				677FCDF52755BB3000EA7923 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +357,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = sqlcuts/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = sqlcuts;
+				INFOPLIST_KEY_CFBundleDisplayName = "SQLite for Shortcuts";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -368,7 +368,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tylerdaddio.sqlcuts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerdaddio.sqlcuts.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -390,7 +390,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = sqlcuts/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = sqlcuts;
+				INFOPLIST_KEY_CFBundleDisplayName = "SQLite for Shortcuts";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -401,7 +401,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tylerdaddio.sqlcuts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerdaddio.sqlcuts.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -412,7 +412,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		677FCDEC2755BB3000EA7923 /* Build configuration list for PBXProject "sqlcuts" */ = {
+		677FCDEC2755BB3000EA7923 /* Build configuration list for PBXProject "sqlite-shortcuts-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				677FCDFD2755BB3100EA7923 /* Debug */,
@@ -421,7 +421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		677FCDFF2755BB3100EA7923 /* Build configuration list for PBXNativeTarget "sqlcuts" */ = {
+		677FCDFF2755BB3100EA7923 /* Build configuration list for PBXNativeTarget "SQLite for Shortcuts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				677FCE002755BB3100EA7923 /* Debug */,
